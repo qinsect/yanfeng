@@ -1,0 +1,39 @@
+{
+    "name": "autoload-test",
+    "version": "0.0.2",
+    "description": "this package is testing purpose package for autoload feature.",
+    "preferGlobal": true,
+    "author": "Yanfeng (https://github.com/qinsect/)",
+    "contributors": [
+        "Yanfeng Ma <mayf1015@yahoo.com>"
+    ],
+    "dependencies": {
+        "yui": "3.6.0"
+    },
+    "devDependencies": {
+        "ytestrunner": "*",
+        "yuitest": "*"
+    },
+    "scripts": {
+        "test": "ytestrunner"
+    },
+    "keywords": [
+        "autoloader",
+        "test"
+    ],
+    "main": "lib/index",
+    "engines": {
+        "node": ">= 0.6.0",
+        "npm": ">= 1.0.0"
+    },
+    "homepage": "http://twiki.corp.yahoo.com/view/ChinaRDC/MPSQE",
+    "repository": {
+        "url": "https://github.com/qinsect/yanfeng.git"
+    },
+    "yahoo": {
+        "bugzilla": {
+            "product": "Screwdriver",
+            "component": "Martini"
+        }
+    }
+}
