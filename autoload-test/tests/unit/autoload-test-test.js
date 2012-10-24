@@ -10,11 +10,14 @@ var YUITest = require('yuitest'),
 
     Y = require("./../../lib/index.js").module();
 
-    YUITest.TestRunner.add(new YUITest.TestCase({
-        name: 'Unit test 1',
-        "test 1": function() {
-            self = this;
-            Assert.isTrue("OK", "OK");
-        }
+    suite.add(new YUITest.TestCase({
+        "unit test": function() {
+            var verfiedValue = 100;
+            var returnValue = Y.AutoLoadTest(verfiedValue);
+            console.log("verfiy the value:" + verfiedValue + ":and:" + returnValue);
+            Assert.areEqual(verfiedValue,returnValue);
+        }}));
+    
+    YUITest.TestRunner.add(suite);
+    YUITest.TestRunner.run();
 
-}));
